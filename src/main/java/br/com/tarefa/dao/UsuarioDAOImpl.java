@@ -34,8 +34,4 @@ public class UsuarioDAOImpl implements UsuarioDAO{
 	public void salvar(Usuario usuario) {
 		entityManager.persist(usuario);
 	}
-
-	
-	
-
 }
