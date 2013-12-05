@@ -43,16 +43,6 @@ public class LoginController {
 		return "redirect:loginForm";
 	}
 	
-	@RequestMapping(value="cadastrarUsuarioTeste")
-	public void cadastrarUsuarioTeste(){
-		
-		Usuario usuarioTeste = new Usuario();
-		usuarioTeste.setLogin("teste");
-		usuarioTeste.setSenha("teste");
-		
-		usuarioDAO.salvar(usuarioTeste);
-	}
-
 	public void setUsuarioDAO(UsuarioDAO usuarioDAO) {
 		this.usuarioDAO = usuarioDAO;
 	}
