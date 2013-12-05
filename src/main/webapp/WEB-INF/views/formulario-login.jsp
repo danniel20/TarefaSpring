@@ -16,8 +16,10 @@
     <form action="efetuaLogin" method="post">
       Login: <input type="text" name="login"/> <br /> 
       Senha: <input type="password" name="senha" /> <br />
-      <input type="submit" value="Entrar nas tarefas" /> 
+      <input type="submit" value="Entrar nas tarefas" />
     </form>
-
+	
+	<a href="novoUsuario">Cadastre-se</a>
+	
 </body>
 </html>
