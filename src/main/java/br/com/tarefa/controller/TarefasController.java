@@ -32,7 +32,7 @@ public class TarefasController {
 		}
 		
 		tarefaDAO.salvar(tarefa);
-		return "tarefa/adicionada";
+		return "redirect:listaTarefas";
 	}
 	
 	@RequestMapping(value="listaTarefas")
