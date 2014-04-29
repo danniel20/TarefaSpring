@@ -13,7 +13,7 @@ public class DataBaseStartListener implements WebApplicationInitializer {
         Server hsqlServer = new Server();
         hsqlServer.setDatabaseName(0, "tarefa");
         hsqlServer.setDatabasePath(0, "file:target/data/tarefa");
-        hsqlServer.setPort(9001);
+        //        hsqlServer.setPort(9001);
         hsqlServer.setLogWriter(null);
         hsqlServer.setSilent(true);
         hsqlServer.start();
