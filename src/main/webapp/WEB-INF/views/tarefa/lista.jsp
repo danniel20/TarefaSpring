@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <script src="resources/js/jquery-1.9.1.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Lista de Tarefas</title>
 </head>
 <body>
@@ -17,17 +17,18 @@
       });
     }
   </script>
-
-  <a href="novaTarefa">Criar nova tarefa</a> 
+	
+  <p align="right"> <a href="logout">Sair do sistema</a> </p>
+  <p> <a href="novaTarefa">Criar nova tarefa</a> </p>
 
   <br /> <br />        
 
   <table border="1">
 	  <tr>
 	    <th>Id</th>
-	    <th>Descrição</th>
+	    <th>DescriÃ§Ã£o</th>
 	    <th>Finalizado?</th>
-	    <th>Data de finalização</th>
+	    <th>Data de finalizaÃ§Ã£o</th>
 	  </tr>
 	 
 	  <c:forEach items="${tarefas}" var="tarefa">
